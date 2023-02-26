@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        table td,
+        table th {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #055585;
+
+            color: white;
+
+            text-align: center;
+        }
+
+        .invoice-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .invoice-header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .invoice-header p {
+            margin: 0;
+        }
+
+        .invoice-details {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .invoice-details p {
+            margin: 0;
+        }
+
+        .invoice-details .client-details {
+            flex-basis: 60%;
+        }
+
+        .invoice-details .invoice-summary {
+            flex-basis: 35%;
+        }
+
+        .invoice-summary table {
+            margin-top: 20px;
+            border: none !important;
+
+        }
+
+        .invoice-summary table tr td {
+
+            border: none !important;
+        }
+
+        .invoice-summary table tr:last-child {
+            /* background-color: #e61919; */
+            border: none;
+
+
+        }
+
+        .invoice-summary table td:first-child {
+            font-weight: bold;
+
+
+        }
+
+        .line-style {
+            margin-bottom: 40px;
+            height: 30px;
+            background-color: #055585;
+            display: flex;
+        }
+
+        tfoot tr td {
+            border: none !important;
+            text-align: end;
+            font-weight: 500;
+
+        }
+
+        .bottom-box {
+            border-bottom: 1px solid #055585 !important;
+        }
+    </style>
+</head>
+
+<!-- <body style="padding: 30px;"> -->
+
+<body class="container">
+    <span class="line-style"></span>
+    <div style="padding: 30px;">
+        <div class="invoice-header">
+            <img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png"
+                height="50px" width="50px" alt="">
+            <h3>PAYMENTS RECEIPT</h3>
+        </div>
+        <div class="invoice-details">
+            <div class="client-details">
+                <h4 style="margin-bottom: 0px;"> Your Company Name </h3>
+                    <h4>
+                        Email Address , Phone Number
+                    </h4>
+                    <h4>
+                        Seller Name Or Brand Name Or Store Name
+                    </h4>
+                    <h4>
+                        Seller Email
+                    </h4>
+                    <h4>
+                        Seller Category , Seller Sub Category
+                    </h4>
+
+            </div>
+
+
+
+            <div class="invoice-summary">
+                <table>
+                    <tr>
+                        <td style="text-align: end;">DELIVERY DATE :</td>
+                        <td style="text-align: end;">26-Dec-2023</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end;">INVOICE/ORDER NO:</td>
+                        <td style="text-align: end;">IN-556510</td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>
+        <div class="invoice-details">
+            <div class="client-details">
+             
+                <h4 style="margin-bottom: 0px; color: #055585; border-bottom: 1px solid #055585; padding-bottom: 3px;">BILL TO</h4>
+                <h4>
+                    Buyer ID
+                </h4>
+                <h4>
+                    Buyer Name
+                </h4>
+                <h4>
+                    Address
+                </h4>
+                <h4>
+                    Phone, Email (If login through email)
+                </h4>
+                <h4>
+                    Buyer Type
+                </h4>
+            </div>
+			<div class="client-details">
+                <h4 style="margin-bottom: 0px; color: #055585; border-bottom: 1px solid #055585; padding-bottom: 3px;">PAYMENTS  DETAILS </h4>
+                <h4>
+                    OrderID
+                </h4>
+                <h4>
+                    Buyer CNIC/NTN
+                </h4>
+                <h4>
+                    Payment Method
+                </h4>
+                <h4>
+                    Cheque No. / Pay Order No. (If applicable)
+                </h4>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>DESCRIPTION</th>
+                    <th>SKU</th>
+                    <th>QTY</th>
+                    <th>UNIT PRICE</th>
+                    <th>TOTAL</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Repeat the following section for each item on the invoice -->
+                <tr>
+                    <td>1</td>
+                    <td>Description</td>
+                    <td>SKU</td>
+                    <td>Qty</td>
+                    <td>UNIT PRICE</td>
+                    <td style="text-align: end !important; ">00.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Description</td>
+                    <td>SKU</td>
+                    <td>Qty</td>
+                    <td>UNIT PRICE</td>
+                    <td style="text-align: end !important; ">00.00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Description</td>
+                    <td>SKU</td>
+                    <td>Qty</td>
+                    <td>UNIT PRICE</td>
+                    <td style="text-align: end !important; ">00.00</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Description</td>
+                    <td>SKU</td>
+                    <td>Qty</td>
+                    <td>UNIT PRICE</td>
+                    <td style="text-align: end !important; ">00.00</td>
+                </tr>
+            </tbody>
+            <tfoot style="margin-top: 30px;">
+                <tr>
+                    <td colspan="4" style="text-align: start; ">Remarks / Payment Instructions:</td>
+                    <td colspan="1">SUBTOTAL:</td>
+                    <td class="bottom-box">00.00</td>
+                </tr>
+                <tr>
+                    <td colspan="4"></td>
+                    <td colspan="1">DISCOUNT:</td>
+                    <td class="bottom-box">00.00</td>
+                </tr>
+                <tr>
+                    <td colspan="4"></td>
+                    <td colspan="1">SUBTOTAL LESS DISCOUNT:</td>
+                    <td class="bottom-box">00.00</td>
+                </tr>
+                <tr>
+                    <td colspan="4"></td>
+                    <td colspan="1">TAX RATE:</td>
+                    <td class="bottom-box">00.00%</td>
+                </tr>
+                <tr>
+                    <td colspan="4"></td>
+                    <td colspan="1">TOTAL TAX:</td>
+                    <td class="bottom-box">00.00%</td>
+                </tr>
+                <tr>
+                    <td colspan="4"></td>
+                    <td colspan="1">SHIPPING/HANDLING :</td>
+                    <td class="bottom-box">00.00%</td>
+                </tr>
+                <tr>
+                    <td colspan="4"></td>
+                    <td colspan="1" style="font-size: 20px; font-weight: 600;">Net Total :</td>
+                    <td class="bottom-box">12.00 Rs</td>
+                </tr>
+                <tr>
+                    <td colspan="4"></td>
+                    <td colspan="1" style="font-size: 20px; font-weight: 600;">PAYMENT :</td>
+                    <td class="bottom-box">12.00 Rs</td>
+                </tr>
+                <tr>
+                    <td colspan="4"></td>
+                    <td colspan="1" style="font-size: 20px; font-weight: 600;">BALANCE :</td>
+                    <td class="bottom-box">12.00 Rs</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <span class="line-style" style="margin-top: 50px;"></span>
+</body>
+
+</html>
